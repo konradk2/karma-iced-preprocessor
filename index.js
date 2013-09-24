@@ -1,4 +1,4 @@
-var coffee = require('coffee-script');
+var coffee = require('iced-coffee-script');
 var path = require('path');
 var createCoffeePreprocessor = function(args, config, logger, helper) {
   config = config || {};
@@ -6,7 +6,8 @@ var createCoffeePreprocessor = function(args, config, logger, helper) {
   var log = logger.create('preprocessor.coffee');
   var defaultOptions = {
     bare: true,
-    sourceMap: false
+    sourceMap: false,
+    runtime: 'inline'
   };
   var options = helper.merge(defaultOptions, args.options || {}, config.options || {});
 

@@ -1,24 +1,24 @@
-# karma-coffee-preprocessor
+# karma-iced-preprocessor
 
-> Preprocessor to compile CoffeeScript on the fly.
+> Preprocessor to compile IcedCoffeeScript on the fly.
 
 ## Installation
 
 **This plugin ships with Karma by default, so you don't need to install it, it should just work ;-)**
 
-The easiest way is to keep `karma-coffee-preprocessor` as a devDependency in your `package.json`.
+The easiest way is to keep `karma-iced-preprocessor` as a devDependency in your `package.json`.
 ```json
 {
   "devDependencies": {
     "karma": "~0.10",
-    "karma-coffee-preprocessor": "~0.1"
+    "karma-iced-preprocessor": "0.1.0-g"
   }
 }
 ```
 
 You can simple do it by:
 ```bash
-npm install karma-coffee-preprocessor --save-dev
+npm install karma-iced-preprocessor --save-dev
 ```
 
 ## Configuration
@@ -35,7 +35,8 @@ module.exports = function(config) {
       // options passed to the coffee compiler
       options: {
         bare: true,
-        sourceMap: false
+        sourceMap: false,
+        runtime: 'inline'
       },
       // transforming the filenames
       transformPath: function(path) {

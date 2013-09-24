@@ -1,24 +1,24 @@
 {
-  "name": "karma-coffee-preprocessor",
-  "version": "0.1.0",
-  "description": "A Karma plugin. Compile coffee script on the fly.",
+  "name": "karma-iced-preprocessor",
+  "version": "0.1.0-g",
+  "description": "A Karma plugin. Compile iced coffee script on the fly.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/karma-runner/karma-coffee-preprocessor.git"
+    "url": "git://github.com/konradk2/karma-iced-preprocessor.git"
   },
   "keywords": [
     "karma-plugin",
     "karma-preprocessor",
-    "coffee-script",
-    "coffee"
+    "iced-coffee-script",
+    "iced"
   ],
   "author": "Vojta Jina <vojta.jina@gmail.com>",
   "dependencies": {
-    "coffee-script": "1.6.3"
+    "iced-coffee-script": "1.6.3-g"
   },
   "peerDependencies": {
     "karma": ">=0.9"
@@ -33,6 +33,7 @@
   "contributors": [
     "Friedel Ziegelmayer <friedel.ziegelmayer@gmail.com>",
     "Niall Smart <niall@pobox.com>",
-    "Zachary Wright Heller <zheller@gmail.com>"
+    "Zachary Wright Heller <zheller@gmail.com>",
+    "Konrad Kuznicki <konrad@kuznicki.me>"
   ]
 }
